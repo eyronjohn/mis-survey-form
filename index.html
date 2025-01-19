@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-body">
+        <div class="title">
+            <h1>MIS Customer Satisfaction Form</h1>
+            <p class="subtitle">Thank you for taking time to fill out this survey.</p>
+        </div>
+        <h2></h2>
+        <div class="survey-form">
+            <form>
+                <fieldset>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your email">
+                    <label>Student No.</label>
+                    <input type="text" placeholder="Enter student number">
+                    <label>Age <span>(Optional)</span></label>
+                    <input type="number" placeholder="Age" min="15" max="25">
+                </fieldset>
+                <fieldset>
+                    <label>What is your department?</label>
+                    <select>
+                        <option value="">Select an option</option>
+                        <option value="1">College of Nursing</option>
+                        <option value="2">College of Science</option>
+                        <option value="3">College of Engineering</option>
+                        <option value="4">College of Arts and Letters</option>
+                        <option value="5">College of Industrial Technology</option>
+                        <option value="6">College of Information and Communications Technology</option>
+                    </select>
+                    <label>Have you encountered these problems? <span>(Check all that apply)</span></label>
+                    <label><input type="checkbox"> Login Issue</label>
+                    <label><input type="checkbox"> Missing Grades</label>
+                    <label><input type="checkbox"> Slow Performance</label>       
+                    <label><input type="checkbox"> Pre-requisite Issue</label>
+                    <label><input type="checkbox"> Non-Responsive Button</label>
+                </fieldset>
+    
+                <fieldset>
+                    <div>
+                        <label>Would you use our service in the future?</label>
+                        <label for="yes"><input type="radio" name="ans" value="yes"> Yes</label>
+                        <label for="no"><input type="radio" name="ans" value="no"> No</label>
+                        <label for="maybe"><input type="radio" name="ans" value="maybe"> Not Sure</label>
+                    </div>
+                    <label id="last-label">How can we improve our service?</label>
+                    <textarea rows="8" placeholder="Enter your comment here..."></textarea>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
